@@ -1,4 +1,4 @@
-d3.csv('datos.csv', d3.autoType).then(data => {
+d3.csv('data/datos.csv', d3.autoType).then(data => {
 //     const fs = require('fs');
 //     const csv = require('csv-parser');
 //     const data = [];
