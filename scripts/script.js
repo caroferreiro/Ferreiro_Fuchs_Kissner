@@ -1,4 +1,4 @@
-d3.csv('datos.csv', d3.autoType).then(data => {
+d3.csv('/data/datos.csv', d3.autoType).then(data => {
   var parseTime = d3.timeParse('%Y-%m-%d');
   var formatMonth = d3.timeFormat('%m');
   var formatDay = d3.timeFormat('%d');
@@ -28,7 +28,7 @@ d3.csv('datos.csv', d3.autoType).then(data => {
         Plot.groupX({y: 'sum'}, {
           x: (d) => d.dia + "-" + d.mes, 
           // y: (d) => d.msPlayed/(60000*60),
-          thresholds: d3.timeWeek,
+          // thresholds: d3.timeWeek,
           fill: 'Fuente',
           // strokeOpacity: 0.2,
           // strokeWeight: 0.2,
