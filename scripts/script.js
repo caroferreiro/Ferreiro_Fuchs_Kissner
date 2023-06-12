@@ -21,13 +21,13 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       Plot.axisY({ 
           tickSize: 4,
           grid: true, 
-          label: 'Horas escuchadas por día', 
+          label: 'Horas escuchadas', 
           labelOffset: 70,
       }),
       Plot.barY(data, 
         Plot.groupX({y: 'sum'}, {
           x: (d) => d.dia + "-" + d.mes, 
-          // y: (d) => d.msPlayed/(60000*60),
+          y: (d) => d.msPlayed/(60000*60),
           // thresholds: d3.timeWeek,
           fill: 'Fuente',
           // strokeOpacity: 0.2,
@@ -56,7 +56,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
         data: 'Fuente',
       },
       color: {
-        // range: ['#', '#', '#'],
+        //range: ['#', '#', '#'],
       },
       x: {
         tickFormat: 'd',
@@ -71,6 +71,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       marginBottom: 70,
       height: 280,
       insetBottom: 5,
+      insetTop: 20,
       width: 600,     
     })
     d3.select('#chart').append(() => chart)
