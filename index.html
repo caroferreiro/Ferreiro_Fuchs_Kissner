@@ -14,7 +14,7 @@
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			background-color: #f3f3f3;
+			background-color: #000000;
 			padding: 1rem;
 		}
 
@@ -33,15 +33,17 @@
 		figure {
 			position: -webkit-sticky;
 			position: sticky;
-			width: 100%;
-			margin: 0;
+			/* width: 100%;
+			margin: 0; */
 			-webkit-transform: translate3d(0, 0, 0);
 			-moz-transform: translate3d(0, 0, 0);
 			transform: translate3d(0, 0, 0);
 			background-color: #8a8a8a;
 			z-index: 0;
 			background-size: cover; /* Agrega esta línea */
-  			background-position: center; /* Agrega esta línea */
+  		background-position: center; /* Agrega esta línea */
+      width: 1715px;
+      height: 644px;
 		}
 
 		figure p {
@@ -81,8 +83,25 @@
 		.step-image {
   			background-size: cover;
   			background-position: center;
-			height: 100%
+			  height: 100%;
+        width: 100%;
+        position: center;
 		}
+    #chart svg {
+      max-width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      align-items: center;
+      text-align: center;
+      display: flex; 
+      justify-content: center;
+      background-color: black;
+      color:#8d8d8d
+    }
+    #chart {
+      background-color: black;
+      position: center;
+    }
 	</style>
 </head>
   <body>
@@ -96,6 +115,7 @@
       </p>
     </div>
     <div id="chart"></div>
+    <main>
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
@@ -121,7 +141,7 @@
 	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 	<script src="scrollama.min.js"></script>
 	<script>
-    
+
 		// using d3 for convenience
 		var main = d3.select("main");
 		var scrolly = main.select("#scrolly");
@@ -132,7 +152,7 @@
 		// initialize the scrollama
 		var scroller = scrollama();
 
-		var images = ["1.jpg", "2.jpg", "3.jpg"];
+		var images = ["imgs/perfilA.jpg", "imgs/perfilB.jpg", "imgs/perfilC.jpg"];
 
 		// generic window resize listener event
 		function handleResize() {
