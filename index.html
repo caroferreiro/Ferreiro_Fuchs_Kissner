@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adivina quien - versión musical</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Scrollama: Sticky Side Example</title>
+	<meta name="description" content="Scrollama: Sticky Side Example" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
   <body>
-    <div id = "tituloPortada"></div>
-      <h1> Adivina quién - versión spotify</h1>
-        <p>
-          A lo largo del siguiente artículo se mostrarán características de tres perfiles 
-          distintos de usuarios de spotify: Perfil A, Perfil B y Perfil C. Tu objetivo como lector
-          es intentar adivinar a quién de nosotras corresponde cada perfil de usuario.
-          Los datos utilizados fueron provistos por Spotify
+    <h1>Adivina Quien</h1>
+    <h2>por Spotify</h2>
+    <div id = "bajadaGeneral">
+      <p class = 'cuerpo'>A lo largo del siguiente artículo se mostrarán características de tres perfiles 
+        distintos de usuarios de spotify: 
+        Perfil A, Perfil B y Perfil C. 
+        <br>
+        Tu objetivo como lector es intentar adivinar a quién de nosotras corresponde cada perfil de usuario.
+        Los datos utilizados fueron provistos por Spotify.   
         </p>
     </div>
-
-
     <div id="chart"></div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    <script src="scripts/script.js"></script>
-  </body>
+    <main>
+		<section id="scrolly">
+			<article>
+				<div class="step" data-step="1">
+					<p>Perfil A</p>
+				</div>
+				<div class="step" data-step="2">
+					<p>Perfil B</p>
+				</div>
+				<div class="step" data-step="3">
+					<p>Perfil C</p>
+				</div>
+			</article>
+
+			<figure>
+				<div class="step-image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			</figure>
+		</section>
+
+		<section id="outro"></section>
+	</main>
+
+	<!-- <div class='debug'></div> -->
+	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+	<script src="scrollama.min.js"></script>
+	<script>
+
+		// using d3 for convenience
+		var main = d3.select("main");
+		var scrolly = main.select("#scrolly");
+		var figure = scrolly.select("figure");
+		var article = scrolly.select("article");
+		var step = article.selectAll(".step");
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		var images = ["imgs/perfilA.jpg", "imgs/perfilB.jpg", "imgs/perfilC.jpg"];
+
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
+		function handleStepEnter(response) {
+  		
+			step.classed("is-active", function (d, i) {
+    		return i === response.index;
+  		});
+
+		  figure.select(".step-image")
+    		.style("background-image", "url(" + images[response.index] + ")")
+			  .style("background-size", "cover")
+    		.style("background-position", "center");
+		}
+
+		function init() {
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			// 2. setup the scroller passing options
+			// 		this will also initialize trigger observations
+			// 3. bind scrollama event handlers (this can be chained like below)
+			scroller
+				.setup({
+					step: "#scrolly article .step",
+					offset: 0.33,
+					debug: false
+				})
+				.onStepEnter(handleStepEnter);
+		}
+
+		// kick things off
+		init();
+	</script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>
