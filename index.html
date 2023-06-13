@@ -8,124 +8,32 @@
 	<meta name="description" content="Scrollama: Sticky Side Example" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="style.css" />
-	<style>
-		#scrolly {
-			position: relative;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			background-color: #000000;
-			padding: 1rem;
-		}
-
-		#scrolly>* {
-			-webkit-box-flex: 1;
-			-ms-flex: 1;
-			flex: 1;
-		}
-
-		article {
-			position: relative;
-			padding: 0 1rem;
-			max-width: 20rem;
-		}
-
-		figure {
-			position: -webkit-sticky;
-			position: sticky;
-			/* width: 100%;
-			margin: 0; */
-			-webkit-transform: translate3d(0, 0, 0);
-			-moz-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-			background-color: #8a8a8a;
-			z-index: 0;
-			background-size: cover; /* Agrega esta línea */
-  		background-position: center; /* Agrega esta línea */
-      width: 1715px;
-      height: 644px;
-		}
-
-		figure p {
-			text-align: center;
-			padding: 1rem;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-moz-transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			font-size: 8rem;
-			font-weight: 900;
-			color: #fff;
-		}
-
-		.step {
-			margin: 0 auto 2rem auto;
-			background-color: #3b3b3b;
-			color: #fff;
-		}
-
-		.step:last-child {
-			margin-bottom: 0;
-		}
-
-		.step.is-active {
-			background-color: goldenrod;
-			color: #3b3b3b;
-		}
-
-		.step p {
-			text-align: center;
-			padding: 1rem;
-			font-size: 1.5rem;
-		}
-		.step-image {
-  			background-size: cover;
-  			background-position: center;
-			  height: 100%;
-        width: 100%;
-        position: center;
-		}
-    #chart svg {
-      max-width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      align-items: center;
-      text-align: center;
-      display: flex; 
-      justify-content: center;
-      background-color: black;
-      color:#8d8d8d
-    }
-    #chart {
-      background-color: black;
-      position: center;
-    }
-	</style>
 </head>
+
   <body>
-    <h1> Adivina quién - versión spotify</h1>
+    <h1>Adivina Quien</h1>
+    <h2>por Spotify</h2>
     <div id = "bajadaGeneral">
-      <p>
-        A lo largo del siguiente artículo se mostrarán características de tres perfiles 
-        distintos de usuarios de spotify: Perfil A, Perfil B y Perfil C. Tu objetivo como lector
-        es intentar adivinar a quién de nosotras corresponde cada perfil de usuario.
-        Los datos utilizados fueron provistos por Spotify. 
-      </p>
+      <p class = 'cuerpo'>A lo largo del siguiente artículo se mostrarán características de tres perfiles 
+        distintos de usuarios de spotify: 
+        Perfil A, Perfil B y Perfil C. 
+        <br>
+        Tu objetivo como lector es intentar adivinar a quién de nosotras corresponde cada perfil de usuario.
+        Los datos utilizados fueron provistos por Spotify.   
+        </p>
     </div>
     <div id="chart"></div>
     <main>
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
-					<p>STEP 1</p>
+					<p>Perfil A</p>
 				</div>
 				<div class="step" data-step="2">
-					<p>STEP 2</p>
+					<p>Perfil B</p>
 				</div>
 				<div class="step" data-step="3">
-					<p>STEP 3</p>
+					<p>Perfil C</p>
 				</div>
 			</article>
 
