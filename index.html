@@ -9,10 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="style.css" />
 </head>
-
   <body>
-    <h1>Adivina Quien</h1>
-    <h2>por Spotify</h2>
+    <h1>ADIVINA QUIEN</h1>
+    <h2>by Spotify</h2>
     <div id = "bajadaGeneral">
       <p class = 'cuerpo'>A lo largo del siguiente artículo se mostrarán características de tres perfiles 
         distintos de usuarios de spotify: 
@@ -28,13 +27,22 @@
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
-					<p>Perfil A</p>
+					<h5>Perfil A</h5>
+					<p><b>Géneros</b>: Latino, Rock Nacional, R&B</p>
+					<p><b>Artistas más escuchados</b>: Rels B, Quevedo, Miley Cyrus</p>
+					<p><b>Lugar preferido para escuchar música</b>: Gimnasio</p>
 				</div>
 				<div class="step" data-step="2">
-					<p>Perfil B</p>
+					<h5>Perfil B</h5>
+					<p><b>Géneros</b>: Rap, R&B, Rock Nacional</p>
+					<p><b>Artistas más escuchados</b>: WOS, C Tangana, Fito Paez</p>
+					<p><b>Lugar preferido para escuchar música</b>: Auto</p>
 				</div>
 				<div class="step" data-step="3">
-					<p>Perfil C</p>
+					<h5>Perfil C</h5>
+					<p><b>Géneros</b>: Latino, Rock Nacional, Alternativa/Independiente</p>
+					<p><b>Artistas más escuchados</b>: No te va a gustar, Adele, Bon Iver</p>
+					<p><b>Lugar preferido para escuchar música</b>: Auto</p>
 				</div>
 			</article>
 
@@ -85,10 +93,22 @@
 			step.classed("is-active", function (d, i) {
     		return i === response.index;
   		});
+			step.classed("step-1", function (d, i) {
+			return i === response.index && i === 0;
+		});
 
-		  figure.select(".step-image")
+			step.classed("step-2", function (d, i) {
+			return i === response.index && i === 1;
+		});
+
+			step.classed("step-3", function (d, i) {
+			return i === response.index && i === 2;
+		});
+
+
+		figure.select(".step-image")
     		.style("background-image", "url(" + images[response.index] + ")")
-			  .style("background-size", "cover")
+			.style("background-size", "cover")
     		.style("background-position", "center");
 		}
 

@@ -30,8 +30,9 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
           y: (d) => d.msPlayed/(60000*60),
           // thresholds: d3.timeWeek,
           fill: 'Fuente',
-          // strokeOpacity: 0.2,
-          // strokeWeight: 0.2,
+          fillOpacity: 1,
+          strokeOpacity: 1,
+          strokeWeight: 0.5,
           legend: true,
           sort: 'Fuente',
           //title: (d) =>
@@ -56,7 +57,8 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
         data: 'Fuente',
       },
       color: {
-        //range: ['#', '#', '#'],
+        // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa
+        range: ['#801ED4', '#E8750E', '#1FD7C3'], // #D10E31: rojo
       },
       x: {
         tickFormat: 'd',

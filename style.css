@@ -1,10 +1,15 @@
 * {
   box-sizing: border-box;
-  background-color: black;
+  /* background-color: black; */
+}
+
+b {
+  font-weight: 600;
 }
 
 body{
   margin-top: 5%;
+  background-color: black;
 }
 
 @font-face {
@@ -33,7 +38,6 @@ h2 {
   font-weight: 100;
   margin-top: -2%;
 }
-
 
 .cuerpo {
   font-family: halyard;
@@ -201,28 +205,49 @@ figure p {
 
 .step {
   margin: 0 auto 2rem auto;
-  background-color: #000000;
-  color: #000000;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  margin-top: 12%;
+  /* background-color: #000000; */
+  /* color: #c30606; */
 }
 
 .step:last-child {
   margin-bottom: 0;
 }
 
-.step.is-active {
-  background-color: rgb(0, 0, 0);
+.step.is-active p{
+  /* background-color: rgb(0, 0, 0); */
   color: #ffffff;
 }
 
 .step p {
-  position: absolute;
-  text-align: auto;
-  margin-top: 55%;
-  margin-left: 25%;
+  text-align: center;
+  font-size: 18px;
+  font-family: halyard;
+  color:#373434;
+}
+
+.step.is-active h5{
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
   font-size: 40px;
   font-family: halyard;
-  color:#ffffff;
+  color: #ffffff;
 }
+
+.step h5 {
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 5%;
+  font-size: 40px;
+  font-family: halyard;
+  color:#373434;
+}
+
 
 .step-image {
     background-size: cover;
@@ -249,4 +274,15 @@ figure p {
   margin: auto;
 }
 
+/* .step.step-1 {
+  background-color: #801ED4;
+}
 
+.step.step-2 {
+  border-style: solid;
+  border-color: #E8750E;
+}
+
+.step.step-3 {
+  background-color: #1FD7C3;
+} */
