@@ -14,7 +14,7 @@ body{
 
 @font-face {
   font-family: cyrene;
-  src: url('/tipografias/Cyrene Regular.otf');
+  src: url('/tipografias/Cyrene-Regular.otf');
 }
 
 @font-face {
@@ -27,7 +27,7 @@ h1 {
   text-align: center;
   font-weight: 400;
   color:#ebeaea;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 h2 {
