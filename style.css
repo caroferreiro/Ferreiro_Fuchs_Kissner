@@ -188,6 +188,7 @@ article {
   position: relative;
   padding: 0 1rem;
   max-width: 20rem;
+  margin: 0 auto;
 }
 
 figure {
@@ -294,6 +295,11 @@ figure p {
   position: relative;
   /* background-color: #f3f3f3; */
   padding: 1rem;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 #scrolly2 svg  {
@@ -334,7 +340,7 @@ figure.charts p {
 
 .step2 {
   margin: 0 auto 2rem auto;
-  margin-left: 70%;
+  /* margin-left: 70%; */
   width: 100%;
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
@@ -342,6 +348,7 @@ figure.charts p {
   background-color: #fff;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .step2:last-child {
@@ -352,6 +359,8 @@ figure.charts p {
   background-color: #81890fa1;
   color: hwb(0 100% 0%);
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .step2 p {
@@ -361,4 +370,7 @@ figure.charts p {
   background-color: #5f8075a1;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 12px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
