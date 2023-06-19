@@ -30,8 +30,9 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
           y: (d) => d.msPlayed/(60000*60),
           // thresholds: d3.timeWeek,
           fill: 'Fuente',
+          stroke: 'Fuente',
           fillOpacity: 1,
-          strokeOpacity: 1,
+          strokeOpacity: 0,
           strokeWeight: 0.5,
           legend: true,
           sort: 'Fuente',
@@ -57,8 +58,10 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
         data: 'Fuente',
       },
       color: {
-        // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa
-        range: ['#801ED4', '#E8750E', '#1FD7C3'], // #D10E31: rojo
+        // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa // #D10E31: rojo
+        // range: ['#348aa7', '#17c3b2', '#bce784'], 
+        // range: ['#bbdef0', '#eb763f', '#00a6a6'], 
+        range: ['#f2871d', '#a6cef5', '#b27be3']
       },
       x: {
         tickFormat: 'd',
@@ -75,7 +78,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       insetBottom: 5,
       insetTop: 20,
       width: 600,     
-      backgroundColor: 'black',
+      backgroundColor: '#1b2f37',
     })
     d3.select('#chart').append(() => chart)
   })

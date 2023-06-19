@@ -76,10 +76,15 @@ function createChart(key) {
   let chart = Plot.plot({
     width: wChart,
     height: hChart,
-    marginTop: 40,
-    marginBottom: 40,
+    marginTop: 50,
+    marginBottom: 50,
     marginLeft: 50,
     marginRight: 50,
+    fill: 'Fuente',
+    stroke: 'Fuente',
+    fillOpacity: 1,
+    strokeOpacity: 0.9,
+    strokeWeight: 1,
     marks: [
       Plot.barX(dataChart, {
           y: 'Fuente',
@@ -90,7 +95,6 @@ function createChart(key) {
       Plot.axisX({ 
         label: null, 
         fontWeight: 500,
-        labelOffset: 70,
       }),
       Plot.axisY({ 
         tickSize: 0,
@@ -100,7 +104,7 @@ function createChart(key) {
     ],
     color: {
         // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa
-        range: ['#801ED4', '#E8750E', '#1FD7C3'], // #D10E31: rojo
+        range: ['#f2871d', '#a6cef5', '#b27be3'], // #D10E31: rojo
     },
     x: {
       //   ticks: 0,
@@ -112,7 +116,7 @@ function createChart(key) {
         fontSize: 13,
         fontFamily: 'Tahoma',
         fontWeight: 400,
-        backgroundColor: 'black',
+        backgroundColor: '#1b2937',
         color: 'white'
     },
   });

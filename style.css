@@ -5,7 +5,7 @@
 
 body{
   margin-top: 5%;
-  background-color: black;
+  background-color: rgb(27, 41, 55);
 }
 
 @font-face {
@@ -174,7 +174,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #000000;
+  background-color: rgb(27, 41, 55);
   padding: 1rem;
 }
 
@@ -251,17 +251,17 @@ figure p {
   margin-top: 0;
   margin-left: 0;
   font-size: 40px;
-  font-family: halyard;
+  font-family: cyrene;
   color: #ffffff;
 }
 
 .step h5 {
+  font-family: cyrene;
   text-align: center;
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 5%;
   font-size: 40px;
-  font-family: halyard;
   color:#373434;
 }
 
@@ -280,14 +280,14 @@ figure p {
   text-align: center;
   display: flex; 
   justify-content: center;
-  background-color: black;
+  background-color: rgb(27, 41, 55);
   color:#8d8d8d;
   margin: auto;
   margin-top: 4%;
 }
 
 #chart {
-  background-color: black;
+  background-color: rgb(27, 41, 55);
   margin: auto;
 }
 
@@ -356,7 +356,7 @@ figure.charts p {
 }
 
 .step2.is-active p {
-  background-color: #81890fa1;
+  background-color: #5f7f80a1;
   color: hwb(0 100% 0%);
   align-items: center;
   text-align: center;
@@ -367,9 +367,10 @@ figure.charts p {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: #5f8075a1;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 12px;
+  background-color: #5f7f80a1;
+  color: hwb(0 100% 0% / 0.493);
+  font-family: halyard;
+  font-size: 15px;
   align-items: center;
   text-align: center;
   justify-content: center;
