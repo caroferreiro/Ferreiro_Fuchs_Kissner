@@ -236,14 +236,14 @@ figure p {
 
 .step.is-active p{
   /* background-color: rgb(0, 0, 0); */
-  color: #ffffff;
+  color: rgb(177, 177, 177);
 }
 
 .step p {
   text-align: center;
   font-size: 18px;
   font-family: halyard;
-  color:#373434;
+  color: rgba(177, 177, 177, 0.363);
 }
 
 .step.is-active h5{
@@ -252,7 +252,7 @@ figure p {
   margin-left: 0;
   font-size: 40px;
   font-family: cyrene;
-  color: #ffffff;
+  color: rgb(177, 177, 177);
 }
 
 .step h5 {
@@ -262,7 +262,7 @@ figure p {
   margin-left: 0;
   margin-bottom: 5%;
   font-size: 40px;
-  color:#373434;
+  color: rgba(177, 177, 177, 0.363);
 }
 
 
