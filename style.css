@@ -5,7 +5,8 @@
 
 body{
   margin-top: 5%;
-  background-color: rgb(27, 41, 55);
+  background-color: rgb(12, 15, 34);
+  margin: auto;
 }
 
 @font-face {
@@ -37,12 +38,13 @@ h2 {
 
 h4 {
   font-family:cyrene;
-  text-align: center;
+  text-align: left;
   color:#ebeaea;
   font-size: 40px;
   margin-top: 3%;
-  font-weight: 100;
-  margin-bottom: 1%;
+  font-weight: 300;
+  margin-bottom: 3%;
+  max-width: 700px;
 }
 
 .imagen {
@@ -52,19 +54,18 @@ h4 {
   width: 70%;
   height: 100%;
   margin-bottom: 6%;
+  max-width: 900px;
 }
 
 .cuerpo {
   font-family: halyard;
   font-size: 20px;
   color: rgb(177, 177, 177);
-  text-align: center;
   line-height: 23px; 
-  max-width: 650px;
-  margin:auto;
-  margin-bottom: 1.5%;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1%;
 }
-
 
 a,
 a:visited,
@@ -174,7 +175,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(27, 41, 55);
+  background-color: rgb(12, 15, 34);
   padding: 1rem;
 }
 
@@ -203,7 +204,7 @@ figure {
   background-size: cover; /* Agrega esta línea */
   background-position: center; /* Agrega esta línea */
   width: 1715px;
-  height: 644px;
+  height: 800px;
 }
 
 figure p {
@@ -280,14 +281,14 @@ figure p {
   text-align: center;
   display: flex; 
   justify-content: center;
-  background-color: rgb(27, 41, 55);
+  background-color: rgb(12, 15, 34);
   color:#8d8d8d;
   margin: auto;
   margin-top: 4%;
 }
 
 #chart {
-  background-color: rgb(27, 41, 55);
+  background-color: rgb(12, 15, 34);
   margin: auto;
 }
 
@@ -324,6 +325,17 @@ figure.charts {
   justify-content: center;
 }
 
+.scrolly2_cuerpo {
+  font-family: halyard;
+  font-size: 20px;
+  color: rgb(177, 177, 177);
+  line-height: 23px;
+  margin: auto;
+  margin-bottom: 0;
+  max-width: 700px;
+  text-align: left;
+}
+
 figure.charts p {
   text-align: center;
   padding: 1rem;
@@ -356,7 +368,7 @@ figure.charts p {
 }
 
 .step2.is-active p {
-  background-color: #5f7f80a1;
+  background-color: #525e7da1;
   color: hwb(0 100% 0%);
   align-items: center;
   text-align: center;
@@ -367,10 +379,10 @@ figure.charts p {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: #5f7f80a1;
+  background-color: #394258a1;
   color: hwb(0 100% 0% / 0.493);
   font-family: halyard;
-  font-size: 15px;
+  font-size: 16px;
   align-items: center;
   text-align: center;
   justify-content: center;

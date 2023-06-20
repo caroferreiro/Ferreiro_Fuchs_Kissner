@@ -117,7 +117,7 @@ function createChart(key) {
         fontFamily: 'Tahoma',
         fontWeight: 400,
         color: '#8d8d8d',
-        backgroundColor: '#1b2937',
+        backgroundColor: 'rgb(12, 15, 34)',
     },
   });
 
