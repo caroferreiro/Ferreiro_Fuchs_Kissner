@@ -56,6 +56,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       ],
       facet: {
         data: 'Fuente',
+        legend: true
       },
       color: {
         // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa // #D10E31: rojo
