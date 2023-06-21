@@ -37,7 +37,7 @@ h2 {
 
 h4#subtitulo_scrolly2{
   font-family:cyrene;
-  text-align: left;
+  text-align: center;
   align-items: center; 
   display: grid;
   color:#ebeaea;
@@ -50,7 +50,7 @@ h4#subtitulo_scrolly2{
 
 h4#subtitulos {
   font-family:cyrene;
-  text-align: left;
+  text-align: center;
   color:#ebeaea;
   font-size: 40px;
   font-weight: 300;
@@ -76,6 +76,7 @@ h4#subtitulos {
   color: rgb(177, 177, 177);
   line-height: 23px; 
   max-width: 800px;
+  text-align: center;
   margin: auto;
   margin-bottom: 1%;
 }
@@ -335,6 +336,16 @@ figure.charts {
   justify-content: center;
 }
 
+.scrolly2_cuerpo {
+  font-family: halyard;
+  font-size: 20px;
+  color: rgb(177, 177, 177);
+  line-height: 23px;
+  margin: auto;
+  margin-bottom: 0;
+  max-width: 800px;
+  text-align: center;
+}
 
 figure.charts p {
   text-align: center;
