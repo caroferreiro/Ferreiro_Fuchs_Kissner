@@ -183,21 +183,6 @@ nav {
   }
 }
 
-#scrolly {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgb(12, 15, 34);
-  padding: 1rem;
-}
-
-#scrolly>* {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
 article {
   position: relative;
   padding: 0 1rem;
@@ -305,6 +290,7 @@ figure p {
   margin: auto;
 }
 
+
 #scrolly2 {
   position: relative;
   /* background-color: #f3f3f3; */
@@ -319,6 +305,17 @@ figure p {
 #scrolly2 svg  {
   display: block;
   margin: auto;
+}
+
+.scrolly2_cuerpo {
+  font-family: halyard;
+  font-size: 20px;
+  color: rgb(177, 177, 177);
+  line-height: 23px;
+  margin: auto;
+  margin-bottom: 0;
+  max-width: 800px;
+  text-align: left;
 }
 
 figure.charts {
@@ -338,16 +335,6 @@ figure.charts {
   justify-content: center;
 }
 
-.scrolly2_cuerpo {
-  font-family: halyard;
-  font-size: 20px;
-  color: rgb(177, 177, 177);
-  line-height: 23px;
-  margin: auto;
-  margin-bottom: 0;
-  max-width: 800px;
-  text-align: left;
-}
 
 figure.charts p {
   text-align: center;
@@ -363,6 +350,7 @@ figure.charts p {
   color: #fff;
 }
 
+
 .step2 {
   margin: 0 auto 2rem auto;
   /* margin-left: 70%; */
@@ -374,6 +362,7 @@ figure.charts p {
   text-align: center;
   align-items: center;
   justify-content: center;
+  position: flex;
 }
 
 .step2:last-child {
@@ -399,4 +388,54 @@ figure.charts p {
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+#scrolly {
+  position: relative;
+  /* background-color: #f3f3f3; */
+  padding: 1rem;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  /*padding-top: 10%;*/
+
+}
+
+#scrolly svg  {
+  display: block;
+  margin: auto;
+}
+
+figure.fotos {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+  height: 90vh;
+  top: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+figure.fotos p {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
 }
