@@ -5,7 +5,7 @@
 
 body{
   margin-top: 5%;
-  background-color: rgb(12, 15, 34);
+  background-color: #152A33;
 }
 
 @font-face {
@@ -73,7 +73,7 @@ h4#subtitulos {
 .cuerpo {
   font-family: halyard;
   font-size: 20px;
-  color: rgb(177, 177, 177);
+  color: #b1b1b1;
   line-height: 23px; 
   max-width: 800px;
   text-align: center;
@@ -237,7 +237,7 @@ figure p {
 
 .step.is-active p {
   background-color: #525e7da1;
-  color: hwb(0 100% 0%);
+  color: #b1b1b1;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -247,7 +247,7 @@ figure p {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: #1f232ea1;
+  background-color: #152A33;
   color: hwb(0 100% 0% / 0.493);
   font-family: halyard;
   font-size: 16px;
@@ -256,24 +256,22 @@ figure p {
   justify-content: center;
 }
 
-
 #chart svg {
   max-width: 100%;
   align-items: center;
   text-align: center;
   display: flex; 
   justify-content: center;
-  background-color: rgb(12, 15, 34);
+  background-color: #152A33;
   color:#8d8d8d;
   margin: auto;
   margin-top: 4%;
 }
 
 #chart {
-  background-color: rgb(12, 15, 34);
+  background-color: #152A33;
   margin: auto;
 }
-
 
 #scrolly2 {
   position: relative;
@@ -364,8 +362,8 @@ figure.charts p {
 }
 
 .step2.is-active p {
-  background-color: #525e7da1;
-  color: hwb(0 100% 0%);
+  background-color: #336070cf;
+  color: #efefef;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -375,8 +373,8 @@ figure.charts p {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: #394258a1;
-  color: hwb(0 100% 0% / 0.493);
+  background-color: #3360702c;
+  color: hwb(0 100% 0% / 0.091);
   font-family: halyard;
   font-size: 16px;
   align-items: center;

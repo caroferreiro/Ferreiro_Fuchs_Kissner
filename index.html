@@ -15,17 +15,53 @@
     <div id = "bajadaGeneral">
       <p class = 'cuerpo'>
 		A lo largo del siguiente artículo se mostrarán características de tres perfiles 
-        distintos de usuarios de spotify: 
-        Perfil A, Perfil B y Perfil C. 
-		</p>
+        distintos de usuarios de spotify:</p>
+		<img src="imgs/Perfiles.png" alt="Perfiles" class="imagen">
 		<p class = 'cuerpo'>
         Tu objetivo como lector es intentar adivinar a quién de nosotras corresponde cada perfil de usuario.
         Los datos utilizados fueron provistos por Spotify.   
         </p>
     </div>
-    <div id="chart"></div>
-
     <main>
+		<section id="scrolly">
+			<figure class="fotos"></figure>
+			<article>
+			  <div class="step" data-step="A">
+				<p>Perfil A</p>
+			  </div>
+			  <div class="step" data-step="B">
+				<p>Perfil B</p>
+			  </div>
+			  <div class="step" data-step="C">
+				<p>Perfil C</p>
+			  </div>
+			</article>
+		</section>
+
+		<h4 id = "subtitulos">Codificaciones</h4>	
+		<img src="imgs/REF.png" alt="Referencias" class="imagen">
+		
+		<div class="descripciones">
+			<h5>Perfil A</h5>
+			<p><b>Géneros</b>: Latino, Rock Nacional, R&B</p>
+			<p><b>Artistas más escuchados</b>: Rels B, Quevedo, Miley Cyrus</p>
+			<p><b>Lugar preferido para escuchar música</b>: Gimnasio</p>
+		</div>
+		<div class="descripciones">
+			<h5>Perfil B</h5>
+			<p><b>Géneros</b>: Latino, Rock Nacional, Alternativa/Independiente</p>
+			<p><b>Artistas más escuchados</b>: No te va a gustar, Adele, Bon Iver</p>
+			<p><b>Lugar preferido para escuchar música</b>: Auto</p>
+		</div>
+		<div class="descripciones">
+			<h5>Perfil C</h5>
+			<p><b>Géneros</b>: Rap, R&B, Rock Nacional</p>
+			<p><b>Artistas más escuchados</b>: WOS, C Tangana, Fito Paez</p>
+			<p><b>Lugar preferido para escuchar música</b>: Auto</p>
+		</div>
+
+		<div id="chart"></div>
+
 		<section id="scrolly2">
 			<h4 id = "subtitulo_scrolly2">Qué escuchamos</h4>	
 			<p class = 'scrolly2_cuerpo'>
@@ -46,41 +82,84 @@
 			  </div>
 			</article> 
 		</section>
-
-		  <h4 id = "subtitulos">Codificaciones</h4>	
-		  <img src="imgs/REF.png" alt="Referencias" class="imagen">
-	  
-
-		  <section id="scrolly">
-			<figure class="fotos"></figure>
-		  
-			<article>
-			  <div class="step" data-step="A">
-				<p>
-				  Perfil A
-				</p>
-			  </div>
-			  <div class="step" data-step="B">
-				<p>
-				  Perfil B
-				</p>
-			  </div>
-			  <div class="step" data-step="C">
-				<p>
-				  Perfil C
-				</p>
-			  </div>
-			</article>
-		  </section>
-		  
-		  
-
 		<section id="outro"></section>
 	</main>
 
 	<!-- <div class='debug'></div> -->
+	<!-- <div class='debug'></div> -->
 	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 	<script src="scrollama.min.js"></script>
+	<!-- <script>
+		// using d3 for convenience
+		var main = d3.select("main");
+		var scrolly = main.select("#scrolly");
+		var figure = scrolly.select("figure");
+		var article = scrolly.select("article");
+		var step = article.selectAll(".step");
+	
+		// initialize the scrollama
+		var scroller = scrollama();
+	
+		var images = ["imgs/perfilA.jpg", "imgs/perfilB.jpg", "imgs/perfilC.jpg"];
+	
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+	
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+				
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+	
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+	
+		function handleStepEnter(response) {	  
+			step.classed("is-active", function (d, i) {
+				return i === response.index;
+			});
+			
+			step.classed("step-1", function (d, i) {
+				return i === response.index && i === 0;
+			});
+	
+			step.classed("step-2", function (d, i) {
+				return i === response.index && i === 1;
+			});
+	
+			step.classed("step-3", function (d, i) {
+				return i === response.index && i === 2;
+			});
+	
+			figure.select(".step-image")
+				.style("background-image", "url(" + images[response.index] + ")")
+				.style("background-size", "cover")
+				.style("background-position", "center");
+			}
+	
+			function init() {
+				// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+				handleResize();
+
+				// 2. setup the scroller passing options
+				// 		this will also initialize trigger observations
+				// 3. bind scrollama event handlers (this can be chained like below)
+				scroller
+					.setup({
+						step: "#scrolly article .step",
+						offset: 0.33,
+						debug: false
+					})
+					.onStepEnter(handleStepEnter);
+			}
+			// kick things off
+			init();
+		</script> -->
 	
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>

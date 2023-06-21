@@ -62,7 +62,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
         // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa // #D10E31: rojo
         // range: ['#348aa7', '#17c3b2', '#bce784'], 
         // range: ['#bbdef0', '#eb763f', '#00a6a6'], 
-        range: ['#f2871d', '#a6cef5', '#b27be3']
+        range: ['#f2871d', '#5ad16e', '#b27be3']
       },
       x: {
         tickFormat: 'd',

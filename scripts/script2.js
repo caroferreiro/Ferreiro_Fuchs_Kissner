@@ -62,7 +62,7 @@ function init() {
   scroller2
     .setup({
       step: "#scrolly2 article .step2",
-      offset: 0.33,
+      offset: 0.66,
       debug: false,
       progress: true,
     })
@@ -104,7 +104,7 @@ function createChart(key) {
     ],
     color: {
         // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa
-        range: ['#f2871d', '#a6cef5', '#b27be3'], // #D10E31: rojo
+        range: ['#f2871d', '#63d476', '#b27be3'], // #D10E31: rojo
     },
     x: {
       //   ticks: 0,
@@ -117,7 +117,7 @@ function createChart(key) {
         fontFamily: 'Tahoma',
         fontWeight: 400,
         color: '#8d8d8d',
-        backgroundColor: 'rgb(12, 15, 34)',
+        backgroundColor: '#152A33',
     },
   });
 
