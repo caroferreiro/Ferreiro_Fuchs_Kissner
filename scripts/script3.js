@@ -44,7 +44,7 @@ function init() {
   // this will also initialize trigger observations
   scroller
     .setup({
-      step: "#scrolly article .step2",
+      step: "#scrolly article .step",
       offset: 0.7,
       debug: false,
       progress: true,
