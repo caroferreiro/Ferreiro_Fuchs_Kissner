@@ -234,15 +234,66 @@ figure p {
 .step:last-child {
   margin-bottom: 0;
 }
-
-.step.is-active p {
-  background-color: #525e7da1;
-  color: #b1b1b1;
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: halyard;
+  font-size: 22px;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
+.step #A {
+  background-color: #f2871d;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 50%;
+}
+.step.is-active #A {
+  background-color: #f2871d;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 100%;
+}
+.step #B {
+  background-color: #5ad16e;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 50%;
+}
+.step.is-active #B {
+  background-color: #5ad16e;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 100%;
+}
+.step #C {
+  background-color: #b27be3;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 50%;
+}
+.step.is-active #C {
+  background-color: #b27be3;
+  color: #efefef;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 100%;
+}
+/*
 .step p {
   text-align: center;
   padding: 1rem;
@@ -250,11 +301,11 @@ figure p {
   background-color: #152A33;
   color: hwb(0 100% 0% / 0.493);
   font-family: halyard;
-  font-size: 16px;
+  font-size: 22px;
   align-items: center;
   text-align: center;
   justify-content: center;
-}
+}*/
 
 #chart svg {
   max-width: 100%;
@@ -432,10 +483,3 @@ figure.fotos p {
   color: #fff;
 }
 
-.step.is-active p {
-  background-color: #336070cf;
-  color: #efefef;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
