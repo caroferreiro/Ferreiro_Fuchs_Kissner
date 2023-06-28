@@ -221,6 +221,11 @@ figure p {
   color: #fff;
 }
 
+.intros {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .step {
   margin: 0 auto 2rem auto;
   /* margin-left: 70%; */
@@ -507,12 +512,11 @@ figure.fotos p {
   align-items: center;
   justify-content: center;
 }
-
-a {
+/* a {
   font-family: halyard;
   font-size: 25px;
   color: #cccccc;
-}
+} */
 
 /* This only changes this particular animation duration */
 .animate__animated.animate__rubberBandgit {
@@ -524,56 +528,3 @@ a {
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
 }
-
-.intros {
-  display:inline-block;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.resultados {
-  display:inline-block;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-#fotoA {
-  width: 100px;
-  height: 100px;
-  background-image: url("/imgs/pA.png");
-  display:inline-block;
-  border: 1px solid white;
-}
-
-/*
-#fotoA:hover {
-  background: url("imgs/pB.png");
-}*/
-
-#fotoB {
-  width: 100px;
-  height: 100px;
-  background-image: url("/imgs/pA.png");
-  display:inline-block;
-  border: 1px solid white;
-}/*
-#fotoB:hover {
-  background: url("imgs/pB.png");
-}
-*/
-#fotoC {
-  width: 100px;
-  height: 100px;
-  background-image: url("imgs/pA.png");
-  display:inline-block;
-  border: 1px solid white;
-}/*
-#fotoC:hover {
-  background: url("imgs/pB.png");
-}*/
-
-/*
-<img src="imgs/pA.png" alt="Perfiles" style="width:33%">
-			<img src="imgs/pB.png" alt="Perfiles" style="width:33%">
-			<img src="imgs/pC.png" alt="Perfiles" style="width:33%">
-*/
