@@ -66,7 +66,7 @@ h4#subtitulos {
   margin-right: auto;
   width: 70%;
   height: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   max-width: 800px;
 }
 
@@ -81,6 +81,7 @@ h4#subtitulos {
   margin-bottom: 1%;
 }
 
+/*
 a,
 a:visited,
 a:hover {
@@ -88,7 +89,7 @@ a:hover {
   text-decoration: none;
   border-bottom: 2px solid currentColor;
 }
-
+*/
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,15 +506,4 @@ figure.fotos p {
   font-size: 16px;
   align-items: center;
   justify-content: center;
-}
-
-/* This only changes this particular animation duration */
-.animate__animated.animate__rubberBandgit {
-  --animate-duration: 2s;
-}
-
-/* This changes all the animations globally */
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
 }

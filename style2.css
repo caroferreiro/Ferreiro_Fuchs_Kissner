@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+
+body{
+  margin-top: 0%;
+  background-color: #152A33;
+}
+
+@font-face {
+  font-family: cyrene;
+  src: url('/tipografias/Cyrene-Regular.otf');
+}
+
+@font-face {
+  font-family: halyard;
+  src: url('/tipografias/Halyard Display.ttf');
+}
+
+h1 {
+  font-family:cyrene;
+  text-align: center;
+  color:#ebeaea;
+  font-size: 55px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family:cyrene;
+  text-align: center;
+  color:#ebeaea;
+  font-size: 38px;
+  font-weight: 100;
+  margin-top: -2%;
+}
+
+
+h4#subtitulos {
+  font-family:cyrene;
+  text-align: center;
+  color:#ebeaea;
+  font-size: 40px;
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  max-width: 800px;
+}
+
+.imagen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 100%;
+  margin-bottom: 1%;
+  max-width: 800px;
+}
+
+.cuerpo {
+  font-family: halyard;
+  font-size: 20px;
+  color: #b1b1b1;
+  line-height: 23px; 
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.abajo {
+  font-family: halyard;
+  font-size: 16px;
+  color: #b1b1b1;
+  line-height: 23px; 
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+#boton {
+  width: 300px;
+  height: 50px;
+  background-color: rgb(234, 197, 76);       
+  margin: auto;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#boton:hover {
+  background-color: rgb(44, 67, 67);
+}
+
+a {
+  font-family: halyard;
+  font-size: 25px;
+  color: #cccccc;
+  line-height: 45px;
+}
