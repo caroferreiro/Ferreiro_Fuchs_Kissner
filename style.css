@@ -543,6 +543,7 @@ a {
   background-image: url("/imgs/pA.png");
   display:inline-block;
   border: 1px solid white;
+  background-size: contain; 
 }
 
 /*
@@ -556,6 +557,7 @@ a {
   background-image: url("/imgs/pA.png");
   display:inline-block;
   border: 1px solid white;
+  background-size: contain; 
 }/*
 #fotoB:hover {
   background: url("imgs/pB.png");
@@ -567,6 +569,7 @@ a {
   background-image: url("imgs/pA.png");
   display:inline-block;
   border: 1px solid white;
+  background-size: contain; 
 }/*
 #fotoC:hover {
   background: url("imgs/pB.png");
