@@ -538,10 +538,11 @@ a {
 }
 
 #fotoA {
-  width: 33px;
+  width: 100px;
   height: 100px;
-  background-image: url("imgs/pA.png");
+  background-image: url("/imgs/pA.png");
   display:inline-block;
+  border: 1px solid white;
 }
 
 /*
@@ -550,20 +551,22 @@ a {
 }*/
 
 #fotoB {
-  width: 33px;
+  width: 100px;
   height: 100px;
-  background-image: url("imgs/pA.png");
+  background-image: url("/imgs/pA.png");
   display:inline-block;
+  border: 1px solid white;
 }/*
 #fotoB:hover {
   background: url("imgs/pB.png");
 }
 */
 #fotoC {
-  width: 33px;
+  width: 100px;
   height: 100px;
   background-image: url("imgs/pA.png");
   display:inline-block;
+  border: 1px solid white;
 }/*
 #fotoC:hover {
   background: url("imgs/pB.png");
