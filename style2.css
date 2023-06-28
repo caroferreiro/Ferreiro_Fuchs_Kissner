@@ -101,3 +101,7 @@ a {
   color: #cccccc;
   line-height: 45px;
 }
+
+#resultados {
+  display:inline-block;
+}
