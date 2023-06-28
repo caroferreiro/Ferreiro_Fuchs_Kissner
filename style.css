@@ -488,3 +488,21 @@ figure.fotos p {
   color: #fff;
 }
 
+.caracteristicas {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.descripciones {
+  flex-basis: 33.33%; /* Divide el espacio en tres columnas iguales */
+  box-sizing: border-box;
+  padding: 0px;
+  text-align: center;
+  padding: 1rem;
+  color: #ebeaea;
+  font-family: halyard;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
