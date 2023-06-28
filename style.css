@@ -507,3 +507,20 @@ figure.fotos p {
   align-items: center;
   justify-content: center;
 }
+
+a {
+  font-family: halyard;
+  font-size: 25px;
+  color: #cccccc;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__rubberBandgit {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
