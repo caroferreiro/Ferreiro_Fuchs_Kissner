@@ -66,7 +66,7 @@ h4#subtitulos {
   margin-right: auto;
   width: 70%;
   height: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   max-width: 800px;
 }
 
@@ -81,6 +81,7 @@ h4#subtitulos {
   margin-bottom: 1%;
 }
 
+/*
 a,
 a:visited,
 a:hover {
@@ -88,7 +89,7 @@ a:hover {
   text-decoration: none;
   border-bottom: 2px solid currentColor;
 }
-
+*/
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,3 +489,22 @@ figure.fotos p {
   color: #fff;
 }
 
+#boton {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(227, 12, 212, 0.6);       
+  margin: auto;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+a {
+  font-family: halyard;
+  font-size: 25px;
+  color: #cccccc;
+}
