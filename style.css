@@ -523,17 +523,20 @@ figure.fotos p {
 /* This only changes this particular animation duration */
 .animate__animated.animate__rubberBandgit {
   --animate-duration: 2s;
-}
-
-.animate__animated.animate__fadeIn {
-  --animate-duration: 2s;
-}
-
-/* This changes all the animations globally */
-:root {
   --animate-duration: 800ms;
   --animate-delay: 1s;
 }
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 5s;
+  --animate-delay: 5s;
+}
+
+/* This changes all the animations globally */
+/* :root {
+  --animate-duration: 800ms;
+  --animate-delay: 10s;
+} */
 
 .resultados {
   display:inline-block;
