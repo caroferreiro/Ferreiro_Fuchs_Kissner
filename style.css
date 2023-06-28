@@ -489,20 +489,24 @@ figure.fotos p {
   color: #fff;
 }
 
-#boton {
-  width: 300px;
-  height: 50px;
-  padding: 10px;
-  background-color: rgba(227, 12, 212, 0.6);       
-  margin: auto;
-  border-radius: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 3%;
+.caracteristicas {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.descripciones {
+  flex-basis: 33.33%; /* Divide el espacio en tres columnas iguales */
+  box-sizing: border-box;
+  padding: 0px;
+  text-align: center;
+  padding: 1rem;
+  color: #ebeaea;
+  font-family: halyard;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
 a {
   font-family: halyard;
   font-size: 25px;
