@@ -222,8 +222,10 @@ figure p {
 }
 
 .intros {
-  max-width: 800px;
+  max-width: 650px;
+  display: flex;
   margin: 0 auto;
+  margin-bottom: 1%;
 }
 
 .step {
@@ -523,10 +525,14 @@ figure.fotos p {
   --animate-duration: 2s;
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
+}
+
 /* This changes all the animations globally */
 :root {
   --animate-duration: 800ms;
-  --animate-delay: 0.9s;
+  --animate-delay: 1s;
 }
 
 .resultados {
