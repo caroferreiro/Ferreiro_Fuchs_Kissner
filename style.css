@@ -226,6 +226,8 @@ figure p {
   display: flex;
   margin: 0 auto;
   margin-bottom: 1%;
+  align-items: center;
+  justify-content: center;
 }
 
 .step {
@@ -581,4 +583,38 @@ figure.fotos p {
 #fotoC:hover {
   background-image: url("imgs/pA.png");
   background-size: contain; 
+}
+
+
+.animate.pop {
+  /*animation-duration: 1s;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: animate-pop;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.2);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 1;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+
+.delay-1 {
+  animation-duration: 0.5s;
+}
+.delay-2 {
+  animation-duration: 0.9s;
+}
+.delay-3 {
+  animation-duration: 1.3s;
 }
