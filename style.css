@@ -594,6 +594,7 @@ figure.fotos p {
   animation-name: animate-pop;
   animation-delay: 0s;
   animation-timing-function: cubic-bezier(.26, .53, .74, 1.2);
+  max-width: 650px;
 }
 
 @keyframes animate-pop {
