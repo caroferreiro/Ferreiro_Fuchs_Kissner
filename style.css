@@ -81,6 +81,28 @@ h4#subtitulos {
   margin-top: 3%;
   margin-bottom: 5%;
 }
+.cuerpofinal1 {
+  font-family: halyard;
+  font-size: 22px;
+  color: #b1b1b1;
+  line-height: 23px; 
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+.cuerpofinal2 {
+  font-family: halyard;
+  font-size: 20px;
+  color: #b1b1b1;
+  line-height: 23px; 
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
 .cuerpo1 {
   font-family: halyard;
   font-size: 20px;
@@ -103,6 +125,10 @@ h4#subtitulos {
   margin: auto;
   margin-top: -3%;
   margin-bottom: 5%;
+}
+
+.espacio {
+  margin-bottom: 20%;
 }
 
 /*
@@ -199,7 +225,7 @@ nav {
 }
 
 #outro {
-  height: 640px;
+  height: 90px;
 }
 
 @media (min-width: 840px) {
