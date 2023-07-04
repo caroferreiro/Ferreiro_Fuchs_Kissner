@@ -79,7 +79,7 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       insetBottom: 5,
       insetTop: 20,
       width: 600,     
-      backgroundColor: 'rgb(12, 15, 34)',
+      backgroundColor: '#06151b',
     })
     d3.select('#chart').append(() => chart)
   })
