@@ -5,7 +5,7 @@
 
 body{
   margin-top: 5%;
-  background-color: #152A33;
+  background-color: #06151b;
 }
 
 @font-face {
@@ -406,14 +406,14 @@ figure p {
   text-align: center;
   display: flex; 
   justify-content: center;
-  background-color: #152A33;
+  background-color: #06151b;
   color:#8d8d8d;
   margin: auto;
   margin-top: 4%;
 }
 
 #chart {
-  background-color: #152A33;
+  background-color: #06151b;
   margin: auto;
 }
 
