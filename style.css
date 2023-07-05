@@ -605,24 +605,11 @@ figure.fotos p {
   --animate-delay: 10s;
 } */
 
-.resultados {
-  display:inline-block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin:auto;
-  margin-top: 2%;
-}
-
 #fotoA {
   width: 230px;
   height: 230px;
   background-image: url("/imgs/pA.png");
   display:inline-block;
-  background-size: contain; 
-}
-#fotoA:hover {
-  background: url("imgs/pB.png");
   background-size: contain; 
 }
 
@@ -633,20 +620,12 @@ figure.fotos p {
   display:inline-block;
   background-size: contain; 
 }
-#fotoB:hover {
-  background: url("imgs/pB.png");
-  background-size: contain; 
-}
 
 #fotoC {
   width: 230px;
   height: 230px;
   background-image: url("imgs/pC.png");
   display:inline-block;
-  background-size: contain; 
-}
-#fotoC:hover {
-  background-image: url("imgs/pA.png");
   background-size: contain; 
 }
 
@@ -686,3 +665,82 @@ figure.fotos p {
 .delay-3 {
   animation-duration: 1.4s;
 }
+
+.content-area {
+	padding: 10% 0;
+}
+.box.animate .content {
+    transform: rotateY(180deg);
+}
+.box,
+.front, 
+.back1, .back2, .back3 {
+	width: 230px;
+  height: 230px;
+  display:inline-block;
+}
+.content {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back1, .back2, .back3 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back1 {
+	background: url(imgs/pC.png);
+    background-size: cover;
+	background-position: center center;
+    transform: rotateY(180deg);
+}
+.back2 {
+	background: url(imgs/pC.png);
+    background-size: cover;
+	background-position: center center;
+    transform: rotateY(180deg);
+}
+.back3 {
+	background: url(imgs/pC.png);
+    background-size: cover;
+	background-position: center center;
+    transform: rotateY(180deg);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  margin-top: 2%;
+}
+
+.img1 {
+    background: url(imgs/pA.png);
+    background-size: cover;
+	background-position: center center;
+}
+.img2 {
+    background: url(imgs/pB.png);
+    background-size: cover;
+	background-position: center center;
+}
+.img3 {
+    background-image: url(imgs/pC.png);
+    background-size: cover;
+	background-position: center center;
+}
+
+.img1, .img, .img3 {
+  width: 230px;
+  height: 230px;
+  display:inline-block;
+  }

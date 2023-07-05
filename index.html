@@ -125,13 +125,54 @@
 			¡Llegaste al final del quiz!
 			</p>
 		<p class = 'cuerpofinal2'>
-			Apoyá el cursor sobre cada perfil para ver los resultados:
+			Para ver la respuesta hace click sobre cada perfil:
 		</p>
-		<div class = "resultados">
-			<div id="fotoA"> </div>
-			<div id="fotoB"> </div>
-			<div id="fotoC"> </div>
-		</div>
+		<div class="container">
+			  <div class="col-lg-4 col-sm-12">
+				<div class="box">
+				  <div class="content">
+					  <div class="front img1"> 
+						  <!-- front content -->
+					  </div>
+					  <div class="back1">
+					  </div>
+				  </div>
+			  </div>
+			  </div>
+			  <div class="col-lg-4 col-sm-12">
+				<div class="box">
+				  <div class="content">
+					  <div class="front img2">
+						  <!-- front content -->
+					  </div>
+					  <div class="back2">
+					  </div>
+				  </div>
+			  </div>
+			  </div>
+			  <div class="col-lg-4 col-sm-12">
+				<div class="box">
+				  <div class="content">
+					  <div class="front img3">
+						  <!-- front content -->
+					  </div>
+					  <div class="back3">
+					  </div>
+				  </div>
+			  </div>
+			  </div>
+			</div>
+
+		
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
+			$('.box .content').click(function() {
+			$(this).closest('.box').toggleClass('animate');
+			$(this).css('transform, rotateY(180deg)');
+		});
+		</script>
 
 
 		<section id="outro"></section>
