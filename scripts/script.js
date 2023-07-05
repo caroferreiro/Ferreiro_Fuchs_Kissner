@@ -70,8 +70,9 @@ d3.csv('/data/datos.csv', d3.autoType).then(data => {
       },
       style: {
         fontSize: 13,
-        fontFamily: 'Tahoma',
+        fontFamily: 'Halyard Display',
         fontWeight: 400,
+        source : './tipografias/Halyard Display.ttf'
       },
       marginLeft: 70,
       marginBottom: 70,

@@ -8,6 +8,11 @@ body{
   background-color: #06151b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @font-face {
   font-family: cyrene;
   src: url('/tipografias/Cyrene-Regular.otf');
@@ -481,7 +486,6 @@ figure.charts p {
   font-family: halyard;
 }
 
-
 .step2 {
   margin: 0 auto 2rem auto;
   /* margin-left: 70%; */
@@ -782,3 +786,32 @@ figure.fotos p {
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   border-radius: 4%;
 }
+
+#resultados {
+  height: 200px;
+}
+
+.boton {
+  margin-top: 7%;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: grid;
+}
+
+a {
+  font-family: halyard;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  border: 0px solid #ffffff;
+  border-radius: 50px;
+  background: #e1e1e1df;
+  color: #06151b;
+} 
