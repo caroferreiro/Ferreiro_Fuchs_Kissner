@@ -563,10 +563,13 @@ figure.fotos p {
   color: #fff;
 }
 
-.caracteristicas {
-  display: flex;
-  max-width: 800px;
-  margin: 0 auto;
+#caracteristicas {
+  margin: 1.5%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
 }
 
 .descripciones {

@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
   <body>
-    
+
 	<!-- <h1 class="animate__animated animate__rubberBand">Adivina Quién</h1> -->
 	<div class="animate pop delay-0"><h1>Adivina Quién</h1></div>
     <h2>Versión Spotify</h2>
@@ -30,7 +30,7 @@
 			<img src="imgs/pC.png" alt="Perfiles" style="width:90%">
 		</div>
 		</div>
-		<p class = 'cuerpo'>Tu objetivo como lector es adivinar a quién de nosotras corresponde cada perfil de usuario. 
+		<p class = 'cuerpo'>Tu objetivo como lector es adivinar a quién de nosotras corresponde cada perfil de usuario.
 		</p>
 		<p class = 'cuerpo2'>Los datos utilizados fueron provistos por Spotify. </p>
     </div>
@@ -52,7 +52,7 @@
 			  </div>
 			</article>
 		</section>
-	
+
 		<!-- <h4 id = "subtitulo_codif">Codificaciones</h4> -->
 		<p class = 'cuerpo_codif'>
 			Así es como codificamos cada una de las canciones:
@@ -62,8 +62,11 @@
 		<div class="espacio"></div>
 
 		<h4 id="subtitulos">Preferencias de los perfiles</h4>
-		<div class="caracteristicas">
-			<div class ="descripciones">
+		<div class="descripciones">
+			<img src="imgs/infoA.png" id="caracteristicas">
+			<img src="imgs/infoB.png" id="caracteristicas">
+			<img src="imgs/infoC.png" id="caracteristicas">
+			<!-- <div class ="descripciones">
 			 <div class="animate__animated animate__fadeIn animate__delay-2s">
 			  <h4 id = "subtitulos">Perfil A</h4>
 			  <p><b>Géneros</b>: Latino, Rock Nacional, R&B</p>
@@ -80,27 +83,27 @@
 			  </div>
 			</div>
 			<div class="descripciones">
-			 <div class="animate__animated animate__fadeIn animate__delay-4s">	
+			 <div class="animate__animated animate__fadeIn animate__delay-4s">
 			  <h4 id = "subtitulos">Perfil C</h4>
 				<p><b>Géneros</b>: Rap, R&B, Rock Nacional</p>
 				<p><b>Artistas más escuchados</b>: WOS, C Tangana, Fito Paez</p>
 				<p><b>Lugar preferido para escuchar música</b>: Auto</p>
 			  </div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="espacio"></div>
 		<section id="scrolly2">
-			<h4 id = "subtitulo_scrolly2">Qué escuchamos</h4>	
+			<h4 id = "subtitulo_scrolly2">Qué escuchamos</h4>
 			<p class = 'scrolly2_cuerpo'>
 			Observemos el promedio de la <b>popularidad</b>, <b>bailabilidad</b> y <b>valencia</b> de las canciones más escuchadas por cada uno de los perfiles.
 			</p>
 			<figure class="charts"></figure>
-	
+
 			<article>
 			  <div class="step2" data-step="Popularidad">
 				<p>La <b>popularidad</b> de una canción se basa en el número total de reproducciones que ha tenido y en relación a cuán recientes son estas. Se mide en un rango de 0 a 100.</p>
-				
+
 			  </div>
 			  <div class="step2" data-step="Bailabilidad">
 				<p>La <b>bailabilidad</b> describe cuán adecuada es una canción para bailar. Se mide en un rango de 0 a 1.</p>
@@ -108,10 +111,10 @@
 			  <div class="step2" data-step="Valencia">
 				<p>La <b>valencia</b> describe la positividad musical transmitida por una canción. Se mide en un rango de 0 a 1. </p>
 			  </div>
-			</article> 
+			</article>
 		</section>
 
-		<h4 id = "subtitulos">Cuánto tiempo escuchamos</h4>	
+		<h4 id = "subtitulos">Cuánto tiempo escuchamos</h4>
 		<p class = 'cuerpo'>
 		Ahora veamos cuántas horas escuchó cada uno de los perfiles a lo largo de una semana.
 			</p>
@@ -120,7 +123,7 @@
 
 		<div class="espacio"></div>
 
-		<h4 id = "subtitulos">Resultados Finales</h4>	
+		<h4 id = "subtitulos">Resultados Finales</h4>
 		<p class = 'cuerpofinal1'>
 			¡Llegaste al final del quiz!
 			</p>
@@ -131,7 +134,7 @@
 			  <div class="col-lg-4 col-sm-12">
 				<div class="box">
 				  <div class="content">
-					  <div class="front img1"> 
+					  <div class="front img1">
 						  <!-- front content -->
 					  </div>
 					  <div class="back1">
@@ -163,9 +166,9 @@
 			  </div>
 			</div>
 
-		
-		
-		
+
+
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script>
 			$('.box .content').click(function() {
@@ -189,52 +192,52 @@
 		var figure = scrolly.select("figure");
 		var article = scrolly.select("article");
 		var step = article.selectAll(".step");
-	
+
 		// initialize the scrollama
 		var scroller = scrollama();
-	
+
 		var images = ["imgs/perfilA.jpg", "imgs/perfilB.jpg", "imgs/perfilC.jpg"];
-	
+
 		// generic window resize listener event
 		function handleResize() {
 			// 1. update height of step elements
 			var stepH = Math.floor(window.innerHeight * 0.75);
 			step.style("height", stepH + "px");
-	
+
 			var figureHeight = window.innerHeight / 2;
 			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
-				
+
 			figure
 				.style("height", figureHeight + "px")
 				.style("top", figureMarginTop + "px");
-	
+
 			// 3. tell scrollama to update new element dimensions
 			scroller.resize();
 		}
-	
-		function handleStepEnter(response) {	  
+
+		function handleStepEnter(response) {
 			step.classed("is-active", function (d, i) {
 				return i === response.index;
 			});
-			
+
 			step.classed("step-1", function (d, i) {
 				return i === response.index && i === 0;
 			});
-	
+
 			step.classed("step-2", function (d, i) {
 				return i === response.index && i === 1;
 			});
-	
+
 			step.classed("step-3", function (d, i) {
 				return i === response.index && i === 2;
 			});
-	
+
 			figure.select(".step-image")
 				.style("background-image", "url(" + images[response.index] + ")")
 				.style("background-size", "cover")
 				.style("background-position", "center");
 			}
-	
+
 			function init() {
 				// 1. force a resize on load to ensure proper dimensions are sent to scrollama
 				handleResize();
@@ -253,7 +256,7 @@
 			// kick things off
 			init();
 		</script> -->
-	
+
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
   <script src="https://unpkg.com/scrollama"></script>
