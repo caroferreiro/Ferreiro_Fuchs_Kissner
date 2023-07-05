@@ -572,6 +572,7 @@ figure.fotos p {
   align-items: center;
   align-content: center;
   width: 50%;
+  background-color: #06151b00;
 }
 
 .descripciones {
@@ -762,15 +763,18 @@ figure.fotos p {
 
 #caracteristicasA:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px rgba(147, 103, 53, 0.4);
+  box-shadow: 0 5px 15px rgba(142, 89, 40, 0.4);
+  border-radius: 4%;
 }
 
 #caracteristicasB:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  box-shadow: 0 5px 15px rgba(76, 159, 51, 0.4);
+  border-radius: 4%;
 }
 
 #caracteristicasC:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  border-radius: 4%;
 }
