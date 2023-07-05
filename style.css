@@ -412,11 +412,13 @@ figure p {
   color:#8d8d8d;
   margin: auto;
   margin-top: 4%;
+  font-family: halyard;
 }
 
 #chart {
   background-color: #06151b;
   margin: auto;
+  font-family: halyard;
 }
 
 #scrolly2 {
@@ -450,6 +452,7 @@ figure.charts {
   top: 0;
   display: grid;
   justify-content: center;
+  font-family: halyard;
 }
 
 .scrolly2_cuerpo {
@@ -475,6 +478,7 @@ figure.charts p {
   font-size: 8rem;
   font-weight: 900;
   color: #fff;
+  font-family: halyard;
 }
 
 
