@@ -103,11 +103,9 @@ function createChart(key) {
     }),
     ],
     color: {
-        // range: ['#2639BA', '#F640C3', '#1BC5B2'], //'#F58017': naranja, '#801ED4': violeta, #F640C3: rosa
-        range: ['#f2871d', '#63d476', '#b27be3'], // #D10E31: rojo
+        range: ['#f2871d', '#63d476', '#b27be3'], 
     },
     x: {
-      //   ticks: 0,
         label: key,
         axis: "bottom",
         labelOffset: 40,
