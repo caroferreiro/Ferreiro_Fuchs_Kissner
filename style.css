@@ -116,7 +116,7 @@ h4#subtitulos {
   max-width: 800px;
   text-align: center;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 0;
 }
 
@@ -255,7 +255,7 @@ nav {
 }
 
 #outro {
-  height: 50px;
+  height: 45px;
 }
 
 @media (min-width: 840px) {
