@@ -2,7 +2,7 @@
 let main = d3.select("main");
 let scrolly = main.select("#scrolly");
 let $figure = scrolly.select(".fotos");
-let wChart = 800;
+let wChart = 1000;
 // let hChart = wChart/2;
 let dataChart = [];
 let $step;
