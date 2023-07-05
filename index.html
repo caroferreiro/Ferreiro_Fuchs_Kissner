@@ -183,82 +183,8 @@
 		<section id="outro"></section>
 	</main>
 
-	<!-- <div class='debug'></div> -->
-	<!-- <div class='debug'></div> -->
-	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
-	<script src="scrollama.min.js"></script>
-	<!-- <script>
-		// using d3 for convenience
-		var main = d3.select("main");
-		var scrolly = main.select("#scrolly");
-		var figure = scrolly.select("figure");
-		var article = scrolly.select("article");
-		var step = article.selectAll(".step");
-
-		// initialize the scrollama
-		var scroller = scrollama();
-
-		var images = ["imgs/perfilA.jpg", "imgs/perfilB.jpg", "imgs/perfilC.jpg"];
-
-		// generic window resize listener event
-		function handleResize() {
-			// 1. update height of step elements
-			var stepH = Math.floor(window.innerHeight * 0.75);
-			step.style("height", stepH + "px");
-
-			var figureHeight = window.innerHeight / 2;
-			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
-
-			figure
-				.style("height", figureHeight + "px")
-				.style("top", figureMarginTop + "px");
-
-			// 3. tell scrollama to update new element dimensions
-			scroller.resize();
-		}
-
-		function handleStepEnter(response) {
-			step.classed("is-active", function (d, i) {
-				return i === response.index;
-			});
-
-			step.classed("step-1", function (d, i) {
-				return i === response.index && i === 0;
-			});
-
-			step.classed("step-2", function (d, i) {
-				return i === response.index && i === 1;
-			});
-
-			step.classed("step-3", function (d, i) {
-				return i === response.index && i === 2;
-			});
-
-			figure.select(".step-image")
-				.style("background-image", "url(" + images[response.index] + ")")
-				.style("background-size", "cover")
-				.style("background-position", "center");
-			}
-
-			function init() {
-				// 1. force a resize on load to ensure proper dimensions are sent to scrollama
-				handleResize();
-
-				// 2. setup the scroller passing options
-				// 		this will also initialize trigger observations
-				// 3. bind scrollama event handlers (this can be chained like below)
-				scroller
-					.setup({
-						step: "#scrolly article .step",
-						offset: 0.33,
-						debug: false
-					})
-					.onStepEnter(handleStepEnter);
-			}
-			// kick things off
-			init();
-		</script> -->
-
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+  <script src="scrollama.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
   <script src="https://unpkg.com/scrollama"></script>
