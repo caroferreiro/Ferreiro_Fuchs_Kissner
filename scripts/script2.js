@@ -114,10 +114,12 @@ function createChart(key) {
     },
     style: {
         fontSize: 13,
-        fontFamily: 'Tahoma',
+        fontFamily: 'Halyard Display',
         fontWeight: 400,
         color: '#8d8d8d',
         backgroundColor: '#06151b',
+        source: './tipografias/Halyard Display.ttf'
+
     },
   });
 
